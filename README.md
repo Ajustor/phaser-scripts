@@ -1,5 +1,3 @@
-# @phaser-cli/scripts
+[![npm version](https://badge.fury.io/js/ajustor-phaser-cli-scripts.svg)](https://badge.fury.io/js/ajustor-phaser-cli-scripts)
 
-This package includes scripts and configuration used by [Phaser CLI][1].
-
-[1]: https://github.com/phaser-cli/phaser-cli
+# ajustor-phaser-cli-scripts
