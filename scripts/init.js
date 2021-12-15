@@ -10,7 +10,7 @@ module.exports = (appPath, appName) => {
     .name
   const ownPath = path.join(appPath, 'node_modules', ownPackageName)
   const appPackage = require(path.join(appPath, 'package.json'))
-  const phaserScripts = ['@phaser-cli/scripts']
+  const phaserScripts = ['ajustor-phaser-cli-scripts']
 
   appPackage.scripts = {
     start: 'phaser-scripts start',
@@ -43,8 +43,8 @@ module.exports = (appPath, appName) => {
   }
 
   fs.copySync(templatePath, appPath)
-  fs.moveSync(path.join(appPath, 'gitignore'), path.join(appPath, '.gitignore'))
-  fs.moveSync(
+  fs.move(path.join(appPath, 'gitignore'), path.join(appPath, '.gitignore'))
+  fs.move(
     path.join(appPath, 'prettierrc'),
     path.join(appPath, '.prettierrc')
   )
