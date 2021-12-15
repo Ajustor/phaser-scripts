@@ -22,12 +22,13 @@ export class BootScene extends Scene {
     const text = this.add.text(x, y - 30, 'Start Loading', {
       fill: '#ffffff',
     })
-
-    back.fillStyle(0xffffff, 0.4)
+    const color = new Phaser.Display.Color()
+    color.random(50)
+    back.fillStyle(color.color, 0.4)
     back.fillRect(x - 5, y - 5, width / 2 + 10, height / 16 + 10)
 
     progress.clear()
-    progress.fillStyle(0xffffff, 0.8)
+    progress.fillStyle(color.color, 0.8)
 
     this.load.on('progress', (value: number) => {
       progress.fillRect(x, y, (width / 2) * value, height / 16)
