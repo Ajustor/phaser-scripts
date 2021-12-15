@@ -17,9 +17,9 @@ const htmlPluginOptions = {
 }
 
 // Copy webpack plugin
-const filesToCopy = []
+const patterns = []
 if (fs.existsSync(paths.appStatic)) {
-  filesToCopy.push({
+  patterns.push({
     context: paths.appPath,
     from: 'static',
     to: 'static',
@@ -74,7 +74,7 @@ module.exports = {
     new webpack.DefinePlugin(definePluginOptions),
     new HtmlWebpackPlugin(htmlPluginOptions),
     new webpack.HotModuleReplacementPlugin(),
-    new CopyWebpackPlugin(filesToCopy),
+    new CopyWebpackPlugin({ patterns }),
   ],
   resolve: {
     alias: {
