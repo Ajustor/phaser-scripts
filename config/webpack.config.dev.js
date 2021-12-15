@@ -23,7 +23,6 @@ if (fs.existsSync(paths.appStatic)) {
     context: paths.appPath,
     from: 'static',
     to: 'static',
-    cache: true,
   })
 }
 
