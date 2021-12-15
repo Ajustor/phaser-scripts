@@ -60,6 +60,7 @@ module.exports = {
     ],
   },
   optimization: {
+    moduleIds: 'named',
     splitChunks: {
       cacheGroups: {
         commons: {
@@ -73,7 +74,6 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin(definePluginOptions),
     new HtmlWebpackPlugin(htmlPluginOptions),
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new CopyWebpackPlugin(filesToCopy),
   ],

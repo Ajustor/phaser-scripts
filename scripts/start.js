@@ -13,12 +13,10 @@ const options = {
   host,
   port,
   hot: true,
-  inline: true,
 }
 
-WebpackDevServer.addDevServerEntrypoints(config, options)
 const compiler = webpack(config)
-const server = new WebpackDevServer(compiler, options)
+const server = new WebpackDevServer(options, compiler)
 
 server.listen(port, host, () => {
   console.log(`Starting server on ${host}:${port}`)
