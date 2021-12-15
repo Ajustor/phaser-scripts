@@ -74,7 +74,7 @@ module.exports = {
     ],
   },
   optimization: {
-    minimizer: [new UglifyJsPlugin(uglifyOptions)],
+    // minimizer: [new UglifyJsPlugin(uglifyOptions)],
     splitChunks: {
       cacheGroups: {
         commons: {
