@@ -1,12 +1,12 @@
 {
-  "name": "@ajustor/phaser-cli-scripts",
+  "name": "ajustor-phaser-cli-scripts",
   "version": "1.0.0",
   "keywords": [
     "phaser",
     "scripts"
   ],
   "description": "Configuration and scripts for Phaser CLI",
-  "repository": "ajustor/phaser-cli",
+  "repository": "ajustor/phaser-scripts",
   "license": "MIT",
   "engines": {
     "node": ">=6"
