@@ -14,7 +14,7 @@
   "bin": {
     "phaser-scripts": "./bin/phaser-scripts.js"
   },
-  "releast-it": {
+  "release-it": {
     "git": {
       "commitMessage": "release v${version}"
     },
