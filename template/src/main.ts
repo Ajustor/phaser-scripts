@@ -1,6 +1,5 @@
 import * as Phaser from 'phaser'
-import BootScene from './scenes/BootScene'
-import PlayScene from './scenes/PlayScene'
+import { Config } from '@utils/Config'
 
 declare global {
   interface Window {
@@ -8,13 +7,5 @@ declare global {
   }
 }
 
-const config: GameConfig = {
-  type: Phaser.AUTO,
-  parent: 'app',
-  width: 800,
-  height: 600,
-  scene: [BootScene, PlayScene],
-}
-
-const game = new Phaser.Game(config)
+const game = new Phaser.Game(Config)
 window.game = game

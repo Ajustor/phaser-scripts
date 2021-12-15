@@ -6,13 +6,18 @@
   ],
   "defaultSeverity": "error",
   "linterOptions": {
-    "exclude": ["node_modules/**"]
+    "exclude": [
+      "node_modules/**"
+    ]
   },
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
     "prettier": true,
     "interface-name": false,
     "no-console": false,
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "variable-name": false
   }
 }

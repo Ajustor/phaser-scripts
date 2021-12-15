@@ -1,8 +1,10 @@
 import { Scene } from 'phaser'
 
-export default class PlayScene extends Scene {
+export class PlayScene extends Scene {
+  public static SCENE_NAME: string = 'PlayScene'
+
   constructor() {
-    super({ key: 'PlayScene' })
+    super({ key: PlayScene.SCENE_NAME })
   }
 
   public create() {
